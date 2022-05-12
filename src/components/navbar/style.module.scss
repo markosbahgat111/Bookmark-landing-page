@@ -1,0 +1,205 @@
+.navbar {
+	width: 100%;
+	padding: 27px 0;
+	z-index: 10000;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+}
+.logo {
+	position: relative;
+	padding: 0 1.5em;
+	* {
+		object-fit: contain;
+		width: 100%;
+	}
+}
+
+.user_buttons li {
+	a {
+		color: hsl(257, 7%, 63%);
+		font-size: 18px;
+		text-decoration: none;
+		transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		text-transform: capitalize;
+	}
+	a.active {
+        background-color: hsl(0, 94%, 66%);
+        color: white;
+        padding: 0.6em 2em;
+        border: 2px solid hsl(0, 94%, 66%);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+}
+	a.active:hover{
+		color: hsl(0, 94%, 66%);
+		background-color: transparent;
+	}
+}
+
+.content {
+	margin: auto;
+	padding: 0px 100px;
+}
+.navbar .content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navbar .menu_list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	li {
+		color: hsl(257, 7%, 63%);
+		cursor: pointer;
+	}
+	li:hover {
+		color: hsl(0, 94%, 66%);
+	}
+	.user_buttons {
+		list-style: none;
+		gap: 2em;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-end;
+		width: 100%;
+        li {
+            a{
+                text-transform: uppercase;
+                font-size: 14px;
+                letter-spacing: 1px;
+            }
+            a:hover{
+            color: hsl(0, 94%, 66%);
+        }
+    }
+	}
+}
+
+.menu_list li {
+	list-style: none;
+}
+
+.icon {
+	font-size: 20px;
+	cursor: pointer;
+	display: none;
+}
+
+.icon#cancel_btn {
+	position: absolute;
+	right: 50px;
+	top: 30px;
+}
+
+.menu_list li:hover #userIcon {
+	color: cyan;
+}
+@media screen and (max-width: 1000px) {
+	.content {
+		margin: auto;
+		padding: 0px 35px 0px 10px;
+	}
+	.navbar .menu_list#active {
+		top: 00px;
+		overflow: auto;
+		z-index: 10000;
+		display: block;
+	}
+	.icon {
+		display: block;
+		color: black;
+	}
+	.icon#hide {
+		display: none;
+	}
+	.navbar .menu_list {
+		display: none;
+		position: fixed;
+		left: 0;
+		top: -150%;
+		min-height: fit-content;
+		height: 100vh;
+		width: 100%;
+		background-color: hsla(229, 31%, 21%, 0.85);
+		display: block;
+		padding: 40px;
+		text-align: center;
+		transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		text-align: center;
+		z-index: 1000;
+		margin: auto;
+		ul {
+			list-style: none;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 0 !important;
+		}
+		li:not(li:last-child) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80px;
+			font-weight: bold;
+			cursor: pointer;
+            border-bottom: 1px solid hsl(229, 8%, 60%);
+            border-top: 1px solid hsl(229, 8%, 60%);
+		}
+		li:hover {
+			filter: brightness(-10);
+			-webkit-filter: brightness(-10);
+		}
+		.user_buttons {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: auto;
+			width: 100%;
+            margin-top: 3em;
+			li a {
+				color: white;
+			}
+			li {
+				width: 100%;
+			}
+			a.active {
+				display: block;
+				width: 100%;
+				padding: 0.2em 2em;
+				border-color: white;
+                margin-top: 2em;
+			}
+			a.active:hover{
+				background-color: black;
+				border-color: black;
+			}
+		}
+	}
+	.navbar .menu_list li a {
+		font-size: 25px;
+		text-transform: capitalize;
+	}
+	.navbar {
+		padding: 30px 0;
+	}
+}
