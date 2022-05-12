@@ -185,13 +185,13 @@
 			a.active {
 				display: block;
 				width: 100%;
-				padding: 0.2em 2em;
+				padding: 1em 2em;
 				border-color: white;
                 margin-top: 2em;
+                background-color: transparent;
 			}
 			a.active:hover{
-				background-color: black;
-				border-color: black;
+				border-color: #fa5757;
 			}
 		}
 	}
