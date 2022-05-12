@@ -57,7 +57,7 @@ const Tab: React.FC<TABProps> = ({h1, img, p}) => {
             <div className='relative sm:w-[600px] w-[95%] h-[45vh] z-10 lg:top-[-15vh] sm:left-[1vw] mb-40 lg:mb-0'>
                 <Image src={img} alt="speedy" layout="fill" priority className='object-contain' />
             </div>
-            <div className='lg:w-[35vw] w-[90%] h-[30vh] bg-slate-600 rounded-r-full absolute lg:left-[-120px]  left-0 z-0 top-[20vh] lg:top-[auto]'></div>
+            <div className='lg:w-[35vw] w-[90%] h-[30vh] bg-[#5368df] rounded-r-full absolute lg:left-[-120px]  left-0 z-0 top-[20vh] lg:top-[auto]'></div>
             <div className='lg:w-[40%] w-11/12 text-center lg:mb-40 lg:ml-40 ml-0 mb-0 lg:text-left '>
                 <h1 className='sm:text-4xl text-2xl font-[500]  capitalize text-[#252b46]'>{h1}</h1>
                 <p className='sm:text-xl sm:w-[70%] ms:my-10 my-5 text-[#9194a1] mx-auto lg:mx-0'>{p}</p>

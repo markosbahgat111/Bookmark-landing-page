@@ -16,7 +16,7 @@ const Header:React.FC<Props> = () => {
             </section>
         </div>
         <div className='relative lg:w-[600px] w-[100%] h-[45vh] z-10 lg:top-[-10vh] mb-20 lg:right-[2vw]'><Image src={tabIcon} alt="icon" layout="fill" priority className='object-contain'/></div>
-        <div className='lg:w-[35vw] w-[100%] h-[30vh] bg-slate-600 rounded-l-full absolute lg:top-[auto] top-[15vh] right-[-20%] lg:right-[-120px] z-0'></div>
+        <div className='lg:w-[35vw] w-[100%] h-[30vh] bg-[#5368df] rounded-l-full absolute lg:top-[auto] top-[15vh] right-[-20%] lg:right-[-120px] z-0'></div>
     </div>
   )
 }
